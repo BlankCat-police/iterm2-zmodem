@@ -17,12 +17,10 @@ if [[ $FILE = "" ]]; then
 	echo -e \\x18\\x18\\x18\\x18\\x18
 	sleep 1
 	echo
-	echo \# Cancelled transfer
 else
 	cd "$FILE"
 	/usr/local/bin/rz -E -e -b
 	sleep 1
 	echo
 	echo
-	echo \# Sent \-\> $FILE
 fi
